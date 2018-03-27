@@ -1,6 +1,6 @@
 <h1>Students</h1>
 
-<% @students.each do |s| %>
-  <%= s.name %>
+<% @students.each do |student| %>
+  <%= student.name %> <%= link_to "Delete", student_path(student), method: :delete %>
   <br>
 <% end %>
